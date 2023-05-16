@@ -23,6 +23,7 @@ st.title("Kaprekar's constant")
 
 ini_numer = st.sidebar.number_input('Input a number:', value=2048)
 if ini_numer > 9999 or ini_numer < 100:
+    st.info('It only works for 3 or 4 digit numbers.')
     st.stop()
 l = calculation(ini_numer)
 st.write(f'The initial number is {l[0][-1]}')
