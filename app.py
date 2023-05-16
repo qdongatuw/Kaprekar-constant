@@ -11,10 +11,9 @@ def calculation(n):
         big = int(''.join(sorted(s, reverse=True)))
         small = int(''.join(sorted(s)))
         ans = big - small
-        num_list.append((big, small, ans))
-
         if ans == new_num:
             return num_list
+        num_list.append((big, small, ans))
         new_num = ans
         
 
