@@ -16,7 +16,7 @@ def calculation(n):
         num_list.append((big, small, ans))
         new_num = ans
         
-
+st.set_page_config(page_title="Kaprekar's constant")
 st.sidebar.header('Hi Mason!')
 st.title("Kaprekar's constant")
 
